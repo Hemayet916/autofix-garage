@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoFix Garage | Car Mechanic</title>
+  <meta name="description" content="AutoFix Garage — Reliable car repairs, maintenance, and diagnostics. Book your appointment online." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">AutoFix <span>Garage</span></div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#booking">Book</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home" role="banner" aria-label="Hero">
+    <div class="overlay"></div>
+    <div class="hero-content container">
+      <h1>Reliable Car Repairs & Maintenance</h1>
+      <p>Expert diagnostics, transparent pricing, and fast turnaround. Your car — done right.</p>
+      <div class="cta">
+        <a class="btn primary" href="#booking">Book Appointment</a>
+        <a class="btn ghost" href="#services">Explore Services</a>
+      </div>
+      <ul class="badges" aria-label="Highlights">
+        <li>ASE-Certified Techs</li>
+        <li>Warranty on Parts</li>
+        <li>Same-Day Service</li>
+      </ul>
+    </div>
+    <a class="scroll-down" href="#services" aria-label="Scroll to services"></a>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle">From routine maintenance to complex repairs.</p>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">🧠</div>
+          <h3>Engine Diagnostics</h3>
+          <p>Advanced OBD-II diagnostics to pinpoint issues accurately.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🛢️</div>
+          <h3>Oil & Filter Change</h3>
+          <p>Premium oils and manufacturer-approved filters.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🛑</div>
+          <h3>Brake Service</h3>
+          <p>Pads, rotors, fluid flush, and ABS troubleshooting.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🛞</div>
+          <h3>Tires & Alignment</h3>
+          <p>Rotation, balancing, replacement, and 4-wheel alignment.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🔋</div>
+          <h3>Battery & Electrical</h3>
+          <p>Battery testing, replacement, alternator and starter service.</p>
+        </article>
+        <article class="card">
+          <div class="icon">❄️</div>
+          <h3>AC Service</h3>
+          <p>Leak checks, recharging, compressor and evaporator repairs.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section alt">
+    <div class="container grid-2">
+      <div>
+        <h2 class="section-title">About AutoFix</h2>
+        <p>With 10+ years of hands-on experience, our certified mechanics keep your car safe and smooth. We combine modern diagnostic tech with honest advice and fair pricing.</p>
+        <ul class="checklist">
+          <li>Transparent quotes before we start</li>
+          <li>OEM or high-quality aftermarket parts</li>
+          <li>Customer lounge with Wi-Fi & coffee</li>
+        </ul>
+      </div>
+      <div class="about-highlight">
+        <div class="stats">
+          <div><strong>10+</strong><span>Years</span></div>
+          <div><strong>2k+</strong><span>Repairs</span></div>
+          <div><strong>4.8★</strong><span>Rating</span></div>
+        </div>
+        <div class="about-card">
+          <h3>Certified & Insured</h3>
+          <p>We stand behind our work with a parts and labor warranty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking (FormSubmit wired) -->
+  <section id="booking" class="section">
+    <div class="container">
+      <h2 class="section-title">Book an Appointment</h2>
+      <p class="section-subtitle">Fill in the details and we’ll confirm shortly.</p>
+
+      <!-- Replace YOUR_EMAIL@gmail.com with your real email -->
+      <form class="form" action="https://formsubmit.co/mdhemayetabir@gmail.com" method="POST">
+        <!-- FormSubmit options -->
+        <input type="hidden" name="_subject" value="New Booking Request - AutoFix Garage">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="thank-you.html">
+
+        <div class="grid-2">
+          <div class="form-field">
+            <label for="fullName">Full Name</label>
+            <input id="fullName" name="name" type="text" placeholder="Jane Doe" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="jane@email.com" required>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="form-field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="+123 456 7890" required>
+          </div>
+          <div class="form-field">
+            <label for="car">Car Make/Model</label>
+            <input id="car" name="car" type="text" placeholder="Toyota Corolla 2018" required>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="form-field">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option>Engine Diagnostics</option>
+              <option>Oil & Filter Change</option>
+              <option>Brake Service</option>
+              <option>Tires & Alignment</option>
+              <option>Battery & Electrical</option>
+              <option>AC Service</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="date">Preferred Date</label>
+            <input id="date" name="date" type="date" required>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="notes">Notes</label>
+          <textarea id="notes" name="message" rows="4" placeholder="Describe the issue..."></textarea>
+        </div>
+        <button type="submit" class="btn primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section alt">
+    <div class="container">
+      <h2 class="section-title">What Clients Say</h2>
+      <div class="testimonials">
+        <figure class="quote">
+          <blockquote>“They diagnosed my check-engine light in minutes and had me back on the road fast.”</blockquote>
+          <figcaption>— John D.</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>“Fair prices and friendly staff. My go-to garage.”</blockquote>
+          <figcaption>— Sarah W.</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>“Transparent, professional, and reliable. Highly recommend.”</blockquote>
+          <figcaption>— Ahmed K.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">We’re here to help.</p>
+        <ul class="contact-list">
+          <li>📍 123 Auto Street, Manama</li>
+          <li>📞 +973 39558030</li>
+          <li>✉️ support@autofix.com</li>
+        </ul>
+        <div class="cta">
+          <a class="btn ghost" href="tel:+97339558030">Call Now</a>
+          <a class="btn ghost" href="https://wa.me/+97339558030" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="map-wrap">
+        <iframe title="Map" src="https://www.google.com/maps?q=garage&output=embed" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> AutoFix Garage. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/+97339558030" class="fab" aria-label="Chat on WhatsApp">💬</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
